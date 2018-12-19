@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PowerReviews - Modern Review Display Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link rel="stylesheet" type="text/css" href="demo-styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prototype/1.6.0/prototype.min.js"></script>
+    <style>
+      .b {
+        font-family: Arial, sans-serif;
+        font-size: 22px;
+      }
+    </style>
+    <script>
+      window.Promise = function() {
+        console.log('window promise');
+      }
+    </script>
+  </head>
+  <body>
+    <script src="../4.0/ui.js"></script>
+    <b class="b">Review Snippet</b>
+    <div id="pr-reviewsnippet"></div>
+    <br />
+    <b class="b">Image Snippet</b>
+    <div id="pr-imagesnippet"></div>
+    <br />
+    <b class="b">Review Display</b>
+    <div id="pr-reviewdisplay"></div>
+    <script>
+      POWERREVIEWS.display.render({
+        api_key: '39135c31-81c8-4de9-b325-45b0e285ec41',
+        locale: 'en_US',
+        merchant_group_id: '13376',
+        merchant_id: 771982,
+        page_id: "ANDRE_SOFA_10",
+        review_wrapper_url: '../standalone.4.0.html?pageId=~~~PAGE_ID~~~',
+        enable_client_side_structured_data: true,
+        components: {
+          ReviewSnippet: 'pr-reviewsnippet',
+          ReviewImageSnippet: 'pr-imagesnippet',
+          ReviewDisplay: 'pr-reviewdisplay',
+        }
+      });
+    </script>
+  </body>
+</html>
