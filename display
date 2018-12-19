@@ -33,11 +33,11 @@
     <div id="pr-reviewdisplay"></div>
     <script>
       POWERREVIEWS.display.render({
-        api_key: '39135c31-81c8-4de9-b325-45b0e285ec41',
+        api_key: '98c6d07b-2880-4da4-abc5-498ab9e9c823',
         locale: 'en_US',
-        merchant_group_id: '13376',
-        merchant_id: 771982,
-        page_id: "ANDRE_SOFA_10",
+        merchant_group_id: '49840',
+        merchant_id: 991789,
+        page_id: "test",
         review_wrapper_url: '../standalone.4.0.html?pageId=~~~PAGE_ID~~~',
         enable_client_side_structured_data: true,
         components: {
