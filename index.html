@@ -5,24 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PowerReviews - Modern Review Display Demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" type="image/png" href="../favicon.png">
-    <link rel="stylesheet" type="text/css" href="demo-styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prototype/1.6.0/prototype.min.js"></script>
-    <style>
-      .b {
-        font-family: Arial, sans-serif;
-        font-size: 22px;
-      }
-    </style>
-    <script>
-      window.Promise = function() {
-        console.log('window promise');
-      }
-    </script>
   </head>
   <body>
-    <script src="../4.0/ui.js"></script>
+    <script src='//ui.powerreviews.com/stable/4.0/ui.js'></script>
     <b class="b">Review Snippet</b>
     <div id="pr-reviewsnippet"></div>
     <br />
@@ -38,7 +23,7 @@
         merchant_group_id: '49840',
         merchant_id: 991789,
         page_id: "test",
-        review_wrapper_url: '../standalone.4.0.html?pageId=~~~PAGE_ID~~~',
+        review_wrapper_url: 'http://ui.powerreviews.com/stable/standalone.4.0.html?pageId=~~~PAGE_ID~~~',
         enable_client_side_structured_data: true,
         components: {
           ReviewSnippet: 'pr-reviewsnippet',
