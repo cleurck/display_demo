@@ -6,6 +6,12 @@
     <title>PowerReviews - Modern Review Display Demo</title>
   </head>
   <body>
+    <script type="application/ld+json">{
+    "@context":"http://schema.org/","@type":"Product","name":"product_test","@id":"test"}
+    </script>
+    
+    
+    
     <script src='//ui.powerreviews.com/stable/4.0/ui.js'></script>
     <b class="b">Review Snippet</b>
     <div id="pr-reviewsnippet"></div>
@@ -24,6 +30,7 @@
         page_id: "test",
         review_wrapper_url: 'http://ui.powerreviews.com/stable/standalone.4.0.html?pageId=~~~PAGE_ID~~~',
         enable_client_side_structured_data: true,
+        structured_data_product_id: test,
         components: {
           ReviewSnippet: 'pr-reviewsnippet',
           ReviewImageSnippet: 'pr-imagesnippet',
